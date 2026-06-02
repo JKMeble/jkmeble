@@ -2,141 +2,198 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>J.K.Meble – Meble na wymiar Sabnie</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J.K.Meble – Meble na wymiar Sabnie</title>
+
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f4f4f4;
+color:#222;
+line-height:1.6;
 }
-header {
-  background: #1f1f1f;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
+
+header{
+background:#1f1f1f;
+color:white;
+text-align:center;
+padding:70px 20px;
 }
-header h1 {
-  margin: 0;
-  font-size: 40px;
+
+header h1{
+margin:0;
+font-size:48px;
 }
-header p {
-  font-size: 18px;
+
+header p{
+font-size:20px;
+margin-top:10px;
 }
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #c59d5f;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 28px;
+background:#c59d5f;
+color:white;
+text-decoration:none;
+border-radius:6px;
 }
-section {
-  padding: 50px 20px;
-  max-width: 1000px;
-  margin: auto;
+
+section{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
 }
-h2 {
-  text-align: center;
+
+h2{
+text-align:center;
+margin-bottom:35px;
 }
-.offer, .why {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+
+.offer,
+.why{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
-.box {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
+
+.box{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+text-align:center;
 }
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:15px;
 }
-.gallery div {
-  background: #ccc;
-  height: 120px;
-  border-radius: 5px;
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:10px;
+transition:.3s;
 }
-.contact {
-  background: #1f1f1f;
-  color: white;
-  text-align: center;
+
+.gallery img:hover{
+transform:scale(1.02);
 }
-.contact a {
-  color: #c59d5f;
-  text-decoration: none;
+
+.contact{
+background:#1f1f1f;
+color:white;
+text-align:center;
 }
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  color: #aaa;
+
+.contact a{
+color:#c59d5f;
+text-decoration:none;
 }
+
+footer{
+background:#111;
+color:#aaa;
+text-align:center;
+padding:20px;
+}
+
 @media(max-width:700px){
-  .offer, .why, .gallery {
-    grid-template-columns: 1fr;
-  }
+header h1{
+font-size:34px;
+}
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
-  <h1>J.K.Meble</h1>
-  <p>Meble na wymiar – Sabnie i okolice</p>
-  <a href="#kontakt" class="btn">Zadzwoń teraz</a>
+<h1>J.K.Meble</h1>
+<p>Meble na wymiar – Sabnie i okolice</p>
+<a href="#kontakt" class="btn">Skontaktuj się</a>
 </header>
 
 <section>
-  <h2>O nas</h2>
-  <p>J.K.Meble to lokalna firma z Sabni, specjalizująca się w produkcji mebli na wymiar. Tworzymy kuchnie, szafy i zabudowy idealnie dopasowane do Twojego domu.</p>
+<h2>O nas</h2>
+<p>
+J.K.Meble to lokalna firma specjalizująca się w produkcji mebli na wymiar.
+Tworzymy kuchnie, szafy, garderoby i zabudowy dopasowane do potrzeb klientów.
+</p>
 </section>
 
 <section>
-  <h2>Oferta</h2>
-  <div class="offer">
-    <div class="box">Kuchnie na wymiar</div>
-    <div class="box">Szafy wnękowe</div>
-    <div class="box">Garderoby</div>
-    <div class="box">Meble łazienkowe</div>
-    <div class="box">Meble biurowe</div>
-    <div class="box">Zabudowy na zamówienie</div>
-  </div>
+<h2>Oferta</h2>
+
+<div class="offer">
+<div class="box">Kuchnie na wymiar</div>
+<div class="box">Szafy wnękowe</div>
+<div class="box">Garderoby</div>
+<div class="box">Meble łazienkowe</div>
+<div class="box">Meble biurowe</div>
+<div class="box">Zabudowy na zamówienie</div>
+</div>
+
 </section>
 
 <section>
-  <h2>Dlaczego my?</h2>
-  <div class="why">
-    <div class="box">✔ Dokładność i doświadczenie</div>
-    <div class="box">✔ Solidne materiały</div>
-    <div class="box">✔ Szybkie terminy</div>
-    <div class="box">✔ Atrakcyjne ceny</div>
-  </div>
+<h2>Dlaczego my?</h2>
+
+<div class="why">
+<div class="box">✔ Dokładność i doświadczenie</div>
+<div class="box">✔ Solidne materiały</div>
+<div class="box">✔ Terminowość</div>
+<div class="box">✔ Atrakcyjne ceny</div>
+</div>
+
 </section>
 
 <section>
-  <h2>Galeria realizacji</h2>
-  <div class="gallery">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
+
+<h2>Galeria realizacji</h2>
+
+<div class="gallery">
+
+<img src="assets/images/realizacje/1.jpg" alt="">
+<img src="assets/images/realizacje/2.jpg" alt="">
+<img src="assets/images/realizacje/3.jpg" alt="">
+<img src="assets/images/realizacje/4.jpg" alt="">
+<img src="assets/images/realizacje/5.jpg" alt="">
+<img src="assets/images/realizacje/6.jpg" alt="">
+<img src="assets/images/realizacje/7.jpg" alt="">
+<img src="assets/images/realizacje/8.jpg" alt="">
+<img src="assets/images/realizacje/9.jpg" alt="">
+<img src="assets/images/realizacje/10.jpg" alt="">
+
+</div>
+
 </section>
 
 <section id="kontakt" class="contact">
-  <h2>Kontakt</h2>
-  <p>📞 Telefon: 503 390 495</p>
-  <p>📍 Adres: Sabnie, ul. Główna 65</p>
-  <p>📧 Email: j.k.meble.jaroslawkorczewski@interia.eu</p>
-  <p>📘 Facebook: <a href="https://www.facebook.com/share/1BJDwmHUJe/" target="_blank">Zobacz profil</a></p>
+
+<h2>Kontakt</h2>
+
+
+<p>📞 Telefon: 503 390 495</p>
+<p>📍 Sabnie, ul. Główna 65</p>
+<p>📧 j.k.meble.jaroslawkorczewski@interia.eu</p>
+<p>
+📘 Facebook:
+<a href="https://www.facebook.com/share/1BJDwmHUJe/" target="_blank">
+Zobacz profil
+</a>
+</p>
+
 </section>
 
 <footer>
-  © 2026 J.K.Meble – Meble na wymiar Sabnie
+© 2026 J.K.Meble – Meble na wymiar
 </footer>
 
 </body>
